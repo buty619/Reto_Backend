@@ -1,0 +1,37 @@
+{
+  "name": "reto_backend",
+  "version": "1.0.0",
+  "description": "desafío para evaluar a los estudiantes que desean convertirse en backend developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buty619/Reto_Backend.git"
+  },
+  "keywords": [
+    "UBITS",
+    "backend",
+    "node",
+    "express",
+    "SQL",
+    "mongodb"
+  ],
+  "author": "Cristian Buitrago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buty619/Reto_Backend/issues"
+  },
+  "homepage": "https://github.com/buty619/Reto_Backend#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.33.0",
+    "sqlite3": "^5.1.6"
+  }
+}
