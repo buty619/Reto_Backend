@@ -46,9 +46,9 @@ npm install
 
 ### 🗒 Estructura del reto
 
-En este repositorio encontraras una carpeta con el nombre [page](./page) esta contiene 3 archivos:
+En este repositorio encontraras una serie de carpetas y arichivos:
 
-- **README.md**: este archivo contiene las instrucciones para resolver el reto por favor léelo cuidadosamente.
+- **INSTRUCTIONS.md**: este archivo contiene las instrucciones para resolver el reto por favor léelo cuidadosamente.
 - **index.js**: en este archivo tendremos la configuración de nuestro servidor utilizando express como nuestra libreria principal.
 
 también podrás encontrar las siguientes carpetas la cual detallaremos a continuación:
