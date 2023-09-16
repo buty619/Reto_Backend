@@ -16,14 +16,14 @@ el siguiente paso en el desarrollo de nuestro backend API, es la creación de nu
 
 ```js
 {
-id: INTEGER PRIMARY KEY AUTOINCREMENT,
-title: TEXT,
-price: INT,
-category: TEXT,
-description: TEXT,
-image: TEXT,
-stock: INT
-}
+   id: INTEGER PRIMARY KEY AUTOINCREMENT,
+   title: TEXT,
+   price: INT,
+   category: TEXT,
+   description: TEXT,
+   image: TEXT,
+   stock: INT
+   }
 ```
 
 ### Nota:
