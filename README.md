@@ -48,7 +48,7 @@ npm install
 
 En este repositorio encontraras una serie de carpetas y arichivos:
 
-- **INSTRUCTIONS.md**: este archivo contiene las instrucciones para resolver el reto por favor léelo cuidadosamente.
+- **INSTRUCTIONS.md**: este [archivo](./INSTRUCTIONS.md) contiene las instrucciones para resolver el reto por favor léelo cuidadosamente.
 - **index.js**: en este archivo tendremos la configuración de nuestro servidor utilizando express como nuestra libreria principal.
 
 también podrás encontrar las siguientes carpetas la cual detallaremos a continuación:
@@ -91,6 +91,6 @@ existen diferentes maneras de realizar peticiones a nuestro servidor local pero 
 
 ### 🎯 ¿Cuando completo el reto?
 
-lee las instrucciones del reto disponibles en el archivo [INSTRUCTIONS.md](./instructions.md), en este archivo podras las instrucciones necesarias para completar el reto complemtamente donde el resultado final sera una API para un E-commerce utilizando, nodejs, express, SQLite.
+lee las instrucciones del reto disponibles en el archivo [INSTRUCTIONS.md](./INSTRUCTIONS.md), en este archivo podras las instrucciones necesarias para completar el reto complemtamente donde el resultado final sera una API para un E-commerce utilizando, nodejs, express, SQLite.
 
 # 🥳 ¡Buena suerte! 🥳
