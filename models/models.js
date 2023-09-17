@@ -9,8 +9,8 @@ const createProduct = (
   // que sera ejecutada, el arreglo de valores a introducir en la query y una fucion
   // callback que sera ejecutada una ves termine de manera exitoso o fallido.
   db.run(
-    "INSERT INTO products (title, price, category, description, image, stock) VALUES (?, ?, ?, ?, ?, ?)",
-    [title, price, category, description, image, stock],
+    "...QUERY...",
+    [...],
     function (err) {
       if (err) {
         return callback(err);
@@ -26,12 +26,6 @@ const getAllProducts = (callback) => {
   //   metodo espera dos parametros, el primero es la query que llama a todos los productos
   //   y el segundo una función callback que se ejecuta una ves se complete el request,
   //   retornando la data solicitada o un mensaje en caso de error en la ejecución del query.
-  db.all("SELECT * FROM products", (err, products) => {
-    if (err) {
-      return callback(err);
-    }
-    callback(null, products);
-  });
 };
 
 const getProduct = (id, callback) => {
@@ -40,11 +34,8 @@ const getProduct = (id, callback) => {
   //   ejecutada, el arreglo de valores a introducir en la query y una fucion callback que sera ejecutada
   //   una ves termine de manera exitoso o fallido, retornando la data solicitada o un mensaje en caso de
   //   error en la ejecución del query  .
-  db.get("SELECT * FROM products WHERE id = ? ", [id], (err, product) => {
-    if (err) {
-      return callback(err);
-    }
-    callback(null, product);
+  db.get("...QUERY...", [...], (...) => {
+    ...
   });
 };
 
@@ -54,12 +45,6 @@ const deleteProduct = (id, callback) => {
   // ejecutada, el arreglo de valores a introducir en la query y una fucion callback que sera
   // ejecutada una ves termine de manera exitoso o fallido, en la funcion callback retorna el error
   // o un mensaje de eliminación completa.
-  db.run("DELETE FROM products WHERE id = ? ", [id], (err, product) => {
-    if (err) {
-      return callback(err);
-    }
-    callback(null, "[SUCCESS]: producto eliminado exitosamente");
-  });
 };
 
 const updateProduct = (
@@ -72,8 +57,8 @@ const updateProduct = (
   //   que dicho metodo espera 3 parametros la query que sera ejecutada, el arreglo de valores a introducir en
   //   la query y una fucion callback que sera ejecutada una ves termine de manera exitoso o fallido.
   db.run(
-    "UPDATE products SET title = ?, price = ?, category = ?, description = ?, image = ?, stock = ? WHERE id = ? ",
-    [title, price, category, description, image, stock, id],
+    "...QUERY...",
+    [...],
     (err) => {
       if (err) {
         return callback(err);
@@ -81,8 +66,8 @@ const updateProduct = (
       //   3.5.1 al terminar la query para actualizar la información del producto retornar el producto con toda
       //   la información actualizada para esto puedes utilizar el metodo `.get` de `sqlite3`.
       db.get(
-        "SELECT * FROM products WHERE id = ?",
-        [id],
+        "...QUERY...",
+        [...],
         (err, updatedProduct) => {
           if (err) {
             return callback(err, null);

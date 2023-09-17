@@ -10,16 +10,14 @@ db.initDB();
 // enviar y recibir información en el formato universalmente usado JSON, por favor agregar middlaware
 // necesario.
 
-app.use(express.json());
+app.use(...);
 app.use("/", router);
 
 // 1.2 ahora configura el puerto `PORT` dado para que nuestro API reciva y envie peticiones por dicho puerto
 // recuerda inyectar una funcion callback que  imprima en consola que el puerto en el cual el servicio esta
 // recibiendo peticiones.
 
-app.listen(PORT, () => {
-  console.log(`listening on port ${PORT}`);
-});
+app.listen(...);
 
 process.on("SIGINT", function () {
   db.closeDB();

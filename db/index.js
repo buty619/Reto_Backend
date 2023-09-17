@@ -17,9 +17,7 @@ const initDB = () => {
   // 2.2 ahora se debe modificar nuestra `QUERY` de tal manera que solo se cree la tabla del punto uno si
   // aun no existe de esta manera evitaremos errores al momento de realizar algun cambio en nuestro proyecto.
 
-  db.run(
-    "CREATE TABLE IF NOT EXISTS products (id INTEGER PRIMARY KEY AUTOINCREMENT,  title TEXT, price INT, category TEXT, description TEXT, image TEXT, stock INT)"
-  );
+  db.run(...);
 };
 
 const closeDB = () => db.close();
